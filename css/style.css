@@ -1,0 +1,10 @@
+* {
+    font-family: "Arvo", serif;
+    font-size: 30px;
+    color: #FFCC00;
+    letter-spacing: 2px;
+}
+
+#logo {
+    filter: grayscale(70%);
+}

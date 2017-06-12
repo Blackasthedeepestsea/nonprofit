@@ -9,6 +9,10 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style type="text/css">
+        * {
+           
+            color: #1c4930;
+        }
         #logo {
             height: 100%;
             filter:grayscale(100%);
@@ -125,7 +129,33 @@ Denver, CO 80203
 PhonePhone: (303) 839-1852
 faxFax: (303) 831-9251
 mailEmail: mainoffice@ncadv.org</div>
-    <div>Subscribe</div>
+    <div class="container">
+		<div class="row text-center">
+			<h2 class="text-uppercase">Drop and Collapse</h2>
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h4 class="modal-title">Modal Header</h4>
+						</div>
+						<div class="modal-body">
+							<p>Some text in the modal.</p>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
     
     </footer>
 <footer>

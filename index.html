@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <title>NCADV</title>
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Fanwood+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Enriqueta" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style type="text/css">
-    
+        body {
+            background: #87ff99;
+        }
         #logo {
             height: 100%;
-            filter:grayscale(100%);
         }
         
-        p {
-            color: black;
-            
+         li{
+            font-family: 'Enriqueta' serif;
+            background: #1c4930;
+             color: #87ff99;
         }
+        
 		.cola,
 		.colb,
 		.colc {
@@ -41,7 +44,6 @@
         .carousel-inner > .item > a >img {
 			margin: 0px auto;
             width: 20%;
-            text-align: left;
             
 		}
 		
@@ -49,10 +51,12 @@
 			font-size: 15px;
             background-color: black;
             color: white;
+            font-family: 'Arvo', serif;
 		}
         
         .title {
             text-align: center;
+            font-family: 'Enriqueta';
         }
 		
 		@media screen and (max-width: 900px) {
@@ -60,6 +64,11 @@
 				font-size: 10px;
 			}
 		}
+        #mission {
+            background: white;
+            color: black;
+            font-family: 'Arvo' serif;
+        }
 	</style>
     
 </head>
@@ -82,7 +91,7 @@
 	</nav>
          <h1 class="title">Why We Do What We Do</h1>
 	<div class="fluid-container">
-		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="background:#d61515;">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="background:#aa5555;">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-example-generic" data-slide-to="0" class="active"</li>
@@ -141,8 +150,8 @@ Michelle loved her children and her life was taken at the age off 22 at the hand
     </header>
         <h1 class="title">National Coalition Against Domestic Violence: Mission</h1>
         <br>
-        <div id="mission">
-            <p>The National Coalition Against Domestic Violence (NCADV) is the voice of victims and survivors.  We are the catalyst for changing society to have zero tolerance for domestic violence.  We do this by affecting public policy, increasing understanding of the impact of domestic violence, and providing programs and education that drive that change.</p><br>
+        <div>
+            <p id ="mission">The National Coalition Against Domestic Violence (NCADV) is the voice of victims and survivors.  We are the catalyst for changing society to have zero tolerance for domestic violence.  We do this by affecting public policy, increasing understanding of the impact of domestic violence, and providing programs and education that drive that change.</p><br>
         </div>
     </div>
 

@@ -59,7 +59,14 @@
 
         @media screen and (max-width: 900px) {
             p {
-                font-size: 10px;
+                font-size: 15px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            
+            #mission {
+                font-size: 15px;
             }
         }
 
@@ -276,16 +283,31 @@
     </footer>
     <footer style="text-align:center;">
         <p>Copyright &copy; 2017 Beth-Anne Farmer</p>
+                                <h1>How can we help?</h1>
+                                <p>I know I am in or think I may be in an abusive relationship.</p>
+                                <label><input type="radio" name="abuse" value="Y"> Yes</label><br>
+                                <label><input type="radio" name="abuse" value="N"> No</label><br>
+
+
+                                <p>I would like to donate to help advance NCADV's mission. </p>
+                                <label><input type="radio" name="donate" value="Y1"> Yes</label><br>
+                                <label><input type="radio" name="donate" value="N1"> No</label><br>
+
+                                <p>I would like to volunteer to help advance NCADV's mission.</p>
+                                <label><input type="radio" name="vol" value="Y2"> Yes</label><br>
+                                <label><input type="radio" name="vol" value="N2"> No</label><br>
+
+                                <button type="button" id="eresponse">Submit</button><br><br>
     </footer>
     <script>
         emmaunuel bedtime snack script 
         function help(abuse, vol, donate) {
-            if ( == 5) {
-                document.write('<b>Yell:</b> NO SHLEEP YET!</br>');
+            if (abuse == "Y") {
+                document.write("Heres HELP!");
             } else if (hr <= 7 && hr != 5) {
                 document.write('<b>Demand:</b> I WANT SNACK!</br>');
                 if (favmilkflavors.indexOf(milk) == -1) {
-                    document.write('<b>Demand:</b> I want Chocallat milk!</br>');
+                    document.write('<b>Demand:</b> I want Chocallat milk!</br>')
                     goodMilk = false;
                 } else {
                     goodMilk = true;
@@ -321,13 +343,12 @@
         }
 
         document.getElementById('eresponse').onclick = function() {
-            hour = document.querySelector('input[name=hour]:checked').value;
-            milkflav = document.querySelector('input[name=milkflav]:checked').value;
-            snack = document.querySelector('input[name=snack]:checked').value;
-            bedtimesnack(hour, milkflav, snack);
+            abuse = document.querySelector('input[name=abuse]:checked').value;
+            vol = document.querySelector('input[name=vol]:checked').value;
+            donate = document.querySelector('input[name=donate]:checked').value;
+            bedtimesnack(abuse, vol, donate);
         };
 
-        bedtimesnack(6, "plain", "banana");
 
     </script>
     <script src="js/jquery.min.js"></script>

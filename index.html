@@ -338,33 +338,41 @@
         <p>Copyright &copy; 2017 Beth-Anne Farmer</p></footer>
       <div> <h1>How can we help?</h1>
         <p>I know I am in or think I may be in an abusive relationship.</p>
-        <label><input type="radio" name="abuse" value=1> Yes</label><br>
-        <label><input type="radio" name="abuse" value=2> No</label><br>
+        <label><input type="radio" name="abuse" value="1"> Yes</label><br>
+        <label><input type="radio" name="abuse" value="2"> No</label><br>
 
 
         <p>I would like to donate to help advance NCADV's mission. </p>
-        <label><input type="radio" name="donate" value="Y1"> Yes</label><br>
-        <label><input type="radio" name="donate" value="N1"> No</label><br>
+        <label><input type="radio" name="donate" value="3"> Yes</label><br>
+        <label><input type="radio" name="donate" value="4"> No</label><br>
 
         <p>I would like to volunteer to help advance NCADV's mission.</p>
-        <label><input type="radio" name="vol" value="Y2"> Yes</label><br>
-        <label><input type="radio" name="vol" value="N2"> No</label><br>
+        <label><input type="radio" name="vol" value="5"> Yes</label><br>
+        <label><input type="radio" name="vol" value="6"> No</label><br>
 
-        <button type="button" id="eresponse">Submit</button><br><br>
+        <button type="button" id="eresponse">BLahhh</button><br><br>
         </div>
    
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+      <script>
         function help(abuse, vol, donate) {
             if (abuse == 1) {
-                document.write("Heres HELP!");
+                document.write('Heres HELP!');
             } 
-            else {
-                document.write("blah");
+            else if (vol == 3) {
+                document.write('thanks');
             }
-
-                    document.write('<button type="reset" onclick="location.reload();">start over</button>');
+            else if ( donate == 5) {
+                document.write('dw);
+            }
+            else {
+                document.write('blah');
+            }
+   
+            document.write('<button type="reset" onclick="location.reload();">start over</button>');
+    
                 }
 
                 document.getElementById('eresponse').onclick = function() {

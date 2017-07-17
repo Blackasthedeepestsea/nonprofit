@@ -147,7 +147,7 @@
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a style="background: red;" href="http://www.ncadv.org/learn-more/get-help">GET HELP</a></li>
-                <li><a href="http://www.ncadv.org/learn-more/what-is-domestic-violence">LEARN MORE</a></li>
+                <li><a href="quiz.html">LEARN MORE</a></li>
                 <li><a href="http://www.ncadv.org/get-involved/volunteer">TAKE ACTION</a></li>
                 <li><a href="https://app.etapestry.com/onlineforms/NationalCoalitionAgainstDomes/onlinegiving.html">DONATE</a></li>
                 <li><a href="http://www.ncadv.org/about-us/contact-us">CONNECT/CONTACT</a></li>
@@ -336,53 +336,8 @@
     </footer>
     <footer style="text-align:center;">
         <p>Copyright &copy; 2017 Beth-Anne Farmer</p></footer>
-      <div> <h1>How can we help?</h1>
-        <p>I know I am in or think I may be in an abusive relationship.</p>
-        <label><input type="radio" name="abuse" value="1"> Yes</label><br>
-        <label><input type="radio" name="abuse" value="2"> No</label><br>
-
-
-        <p>I would like to donate to help advance NCADV's mission. </p>
-        <label><input type="radio" name="donate" value="3"> Yes</label><br>
-        <label><input type="radio" name="donate" value="4"> No</label><br>
-
-        <p>I would like to volunteer to help advance NCADV's mission.</p>
-        <label><input type="radio" name="vol" value="5"> Yes</label><br>
-        <label><input type="radio" name="vol" value="6"> No</label><br>
-
-        <button type="button" id="eresponse">BLahhh</button><br><br>
-        </div>
-   
-
-     <script src="js/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-      <script>
-        function help(abuse, vol, donate) {
-            if (abuse == 1) {
-                document.write('Heres HELP!');
-            } 
-            else if (vol == 3) {
-                document.write('thanks');
-            }
-            else if ( donate == 5) {
-                document.write('dw);
-            }
-            else {
-                document.write('blah');
-            }
-   
-            document.write('<button type="reset" onclick="location.reload();">start over</button>');
-    
-                }
-
-                document.getElementById('eresponse').onclick = function() {
-                    abuse = document.querySelector('input[name=abuse]:checked').value;
-                    vol = document.querySelector('input[name=vol]:checked').value;
-                    donate = document.querySelector('input[name=donate]:checked').value;
-                    help(abuse, vol, donate);
-                };
-
-    </script>
+       <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>

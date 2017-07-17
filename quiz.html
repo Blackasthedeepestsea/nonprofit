@@ -11,6 +11,7 @@
     <style type="text/css">
         body {
             background: #d2ffb7;
+            text-align: center;
         }
 
         #logo {
@@ -112,6 +113,7 @@
             font-size: 20px;
             color: #2E2E2E;
             margin-bottom: 0px;
+            text-align: center;
         }
 
         h2.quizHeader {
@@ -128,6 +130,7 @@
         h2.quizScore {
             font-family: Arial, sans-serif;
             font-size: 25px;
+            text-align: center;
         }
 
         div.quizAnswers {
@@ -135,6 +138,7 @@
             font-size: 16px;
             color: #424242;
             padding: 4px 0 4px 0;
+            text-align: center;
         }
 
         label {
@@ -167,6 +171,7 @@
             width: 85px;
             border: 1px solid #5E5E5E;
             border-radius: 5px;
+            text-align: center;
         }
 
         input.quizSubmit[type="submit"]:hover {
@@ -182,7 +187,13 @@
             padding: 10px;
             padding-left: 25px;
             box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 1px 0px;
+            
         }
+        
+         table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
 
         th {}
 
@@ -192,11 +203,15 @@
 
         .submitter {
             width: 85px;
+            margin-left:auto;
+            margin-right:auto;
         }
 
         .hide {
             display: none;
         }
+        
+       
 
     </style>
 </head>
@@ -225,7 +240,7 @@
     <body>
         <h2 class="quizHeader">Take a Quiz!</h2>
 
-        <table style="width:583px">
+   <div id="quiz">    <table class ="center" style="width:583px">
             <tr>
                 <td>
                     <div>
@@ -311,7 +326,7 @@
         <div class="submitter">
             <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
         </div>
-
+</div>
         <!--show only wrong answers on submit-->
         <div class="quizAnswers" id="correctAnswer1"></div>
         <div class="quizAnswers" id="correctAnswer2"></div>
